@@ -4,5 +4,6 @@ module count_1 (
 );
   // …
   // Add your description here
+  assign out = a[0] + a[1] + a[2] + a[3];
   // …
 endmodule
