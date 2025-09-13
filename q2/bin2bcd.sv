@@ -5,5 +5,14 @@ module bin2bcd (
 );
   // …
   // Add your description here
+  always_comb begin
+    if (binary >= 4'd10) begin
+      carry = 1'b1;
+      bcd   = binary - 4'd10;  
+    end else begin
+      carry = 1'b0;
+      bcd   = binary;          
+    end
+  end
   // …
 endmodule
